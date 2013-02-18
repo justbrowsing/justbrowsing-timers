@@ -1,6 +1,11 @@
 justbrowsing-timers Timers web-app for JustBrowsing
 ---------------------------------------------------
-Stopwatch and Eggtimer
+Stopwatch (counts up) and Eggtimer (counts down)
+
+Demo page: http://justbrowsing.github.com/justbrowsing-timers/
+
+
+Changelog:
 
 2012-01-28
 * Stylized buttons
