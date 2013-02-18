@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'DSDIGI';
+	src: url('DSDIGI.eot');
+	src: local('DSDIGI'), url('DSDIGI.ttf') format('truetype');
+}
+h3 {
+	color: #555;
+}
+.start,.reset {
+	font-size: x-large;
+	width: 80px;
+}
+.increment { 
+	font-size: large; 
+	padding-right:20px; 
+	padding-left: 20px;
+}
+.clear { 
+	clear: both; 
+}
+.top { 
+	width: 100%; 
+}
+.col { 
+	width: 50%; float: left; 
+}
+.col, .top { 
+	text-align: center; 
+}
+#stopwatch {
+	background:url(stopwatch.png); 
+	no-repeat center center;
+	width: 512px; 
+	height: 512px;
+	line-height: 12px;
+}
+#hourglass {
+	background:url(eggtimer.png); 
+	no-repeat center center;
+	width: 512px; 
+	height: 512px;
+	line-height: 12px;
+}
+text { 
+	font-size: 50px;
+	font-family: DSDIGI; 
+	padding-left: 20px; 
+	padding-right: 20px; 
+}
+#watchtimer { 
+	color: green;
+	background: black;
+}
+#eggtimer { 
+	color: red; 
+	background: black;
+	border: 1px;
+	border-color: red;
+}

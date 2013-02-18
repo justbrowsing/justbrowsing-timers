@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Sound file: /usr/share/sounds/phone.wav -->
+<!-- AudioAlert: https://github.com/JessThrysoee/audioalert -->
+<!-- Timers: http://virusalert.asia -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Timers</title>
+<link href="data:image/x-icon;base64,
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wAAAAAzJ3zzAAAACXBI
+WXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QEZBwQsIf4rlgAAAFdJREFUOMtjZECA/wykAUY4QYZm
+uCGMFGhmYGBgYGBioBBQbADLf2whgyNgsPmXCSaBSyO6HLoYE874GTKBiNUAUhIGC67QxmfYfwIx
+Q98woEpmoig7AwC4IA4f4gZjMQAAAABJRU5ErkJggg==
+" rel="icon" type="image/x-icon" />
+<script src="audioalert-1.3.min.js"></script>
+<script src="watchclock.js"></script>
+<script src="eggclock.js"></script>
+<link rel="stylesheet" type="text/css" href="timer.css" />
+<link rel="stylesheet" type="text/css" href="buttons.css" />
+</head>
+
+<body onload="resetClock(); resetEgg()">
+<div class="main">
+	<div class="col">
+		<div id="stopwatch">
+			<br><br><br><br><br><br>
+			<h3>Stop Watch</h3>
+			<br><br><br><br>
+			<button class="increment" onclick="plusHour()">+H</button>
+			<button class="increment" onclick="plusMin()">+M</button>
+			<button class="increment" onclick="plusTen()">+S</button>
+			<br><br><br><br>
+			<text id="watchtimer">00:00:00.0</text>
+			<br><br><br><br>
+			<button class="increment" onclick="minusHour()">-H</button>
+			<button class="increment" onclick="minusMin()">-M</button>
+			<button class="increment" onclick="minusTen()">-S</button>
+			<br><br><br><br><br>
+			<button class="start" id="watchButton" onclick="watchClock()">Start</button> 
+			<button class="reset" onclick="resetClock()">Reset</button>
+		</div>
+	</div>
+	<div class="col">
+		<div id="hourglass">
+			<br><br><br>
+			<h3>Egg Timer</h3>
+			<br><br><br><br><br><br><br>
+			<button class="increment" onclick="addHour()">+H</button>
+			<button class="increment" onclick="addMin()">+M</button>
+			<button class="increment" onclick="addTen()">+S</button>
+			<br><br><br><br><br>
+			<text id="eggtimer">00:05:00.0</text>
+			<br><br><br>
+			<button class="increment" onclick="subHour()">-H</button>
+			<button class="increment" onclick="subMin()">-M</button>
+			<button class="increment" onclick="subTen()">-S</button>
+			<br><br><br><br><br><br>
+			<button class="start" id="eggButton" onclick="eggClock()">Start</button> 
+			<button class="reset" onclick="resetEgg()">Reset</button>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<script>
+// start loading the gong
+var gong;
+gong = new AudioAlert({
+	ogg: 'sound/gong.ogg',
+	mp3: 'sound/gong.mp3',
+	loadeddata: function () {
+		msg('gong: loadeddata');
+	}
+});
+
+// bind event handler on gong 'ended'
+gong.bind('ended', function () {
+	msg('gong ended (bind)');
+});
+</script>
+
+</body>
+</html>
