@@ -1,0 +1,49 @@
+button {
+	background: #141414; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #141414 12%, #1c1c1c 48%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#141414), color-stop(48%,#1c1c1c), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* W3C */
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	
+	border: 0;
+	border-top: 2px solid rgba(255,255,255,0.2);
+	border-left: 2px solid rgba(255,255,255,0.2);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-right: 2px solid rgba(0,0,0,0.2);
+	margin: 4px;
+	
+	-webkit-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-moz-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-ms-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-o-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+
+	cursor: pointer;
+	color: #ccc;
+	font-family: verdana;
+	padding: 0;
+}
+
+button:active, button.down {
+	-webkit-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-moz-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-ms-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-o-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+}
+
+button:hover, button.highlight {
+	-webkit-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-moz-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-ms-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-o-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	text-shadow: 0 0 5px rgba(255,255,220,0.6);
+}
